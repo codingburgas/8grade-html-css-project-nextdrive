@@ -1,0 +1,130 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #0d1b3d, #0a1748);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001f54;
+    padding: 15px 50px;
+  }
+  
+  .logo {
+    color: #00e6ff;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffd600;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Main Section */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-section {
+    text-align: center;
+    background: transparent;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .login-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffd600;
+  }
+  
+  .login-section h1 span {
+    color: #ffd600;
+  }
+  
+  /* Form inputs */
+  form input {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2d3e50;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  form input::placeholder {
+    color: #ccc;
+  }
+  
+  /* Button style */
+  .button-primary {
+    background-color: #ffd600;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-primary:hover {
+    background-color: #ffc400;
+  }
+  
+  /* Text links */
+  .login-section p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-section a {
+    color: #ffd600;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #001f54;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
