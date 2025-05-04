@@ -1,0 +1,116 @@
+/* Reset default spacing and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles: font, background gradient, full height layout */
+  body {
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(-45deg, #141e30, #243b55, #1e3c72, #2a5298);
+    animation: gradientMove 15s ease infinite;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Background gradient animation */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Content wrapper */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header bar styles */
+  .header {
+    background: rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 1rem 0;
+  }
+  
+  /* Logo style */
+  .logo {
+    font-size: 2rem;
+    color: #00ffff;
+    font-weight: bold;
+  }
+  
+  /* Navigation list */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Navigation links */
+  .nav-list a {
+    color: #f4d03f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #ffffff;
+  }
+  
+  /* Main content section */
+  .section {
+    flex: 1;
+    padding: 4rem 1rem;
+  }
+  
+  /* Section heading */
+  .section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+  }
+  
+  /* Paragraph styling */
+  .section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Button style */
+  .btn {
+    background: #ffd700;
+    color: black;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ffc300;
+    transform: scale(1.05);
+  }
+  
+  /* Footer style */
+  .footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
