@@ -1,0 +1,84 @@
+ /* Нулиране на базовите стилове */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Стил за body */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #0d1b3d, #0a1748);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* Хедър */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001f54;
+    padding: 15px 50px;
+  }
+  
+  .logo {
+    color: #00e6ff;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffd600;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .privacy-policy {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2d3e50;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.privacy-policy h1 {
+    font-size: 32px;
+    color: #ffd600;
+}
+
+.privacy-policy h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ffd600;
+}
+
+.privacy-policy p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+footer {
+    background-color: #001f54;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 50px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
