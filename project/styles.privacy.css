@@ -72,13 +72,13 @@
 footer {
     background-color: #001f54;
     text-align: center;
-    padding: 20px;
+    padding: 14px;
     font-size: 14px;
     color: #ccc;
     margin-top: 50px;
   }
 * {
     margin: 0;
-    padding: 0;
+    padding: 9.5px;
     box-sizing: border-box;
   }
