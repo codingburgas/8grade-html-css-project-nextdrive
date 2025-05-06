@@ -4,13 +4,12 @@
   <img src="https://instagram.fsof9-1.fna.fbcdn.net/v/t1.15752-9/494357952_1351893852671061_3365040210891451432_n.png?stp=dst-png_s480x480&_nc_cat=101&ccb=7-5&_nc_sid=0024fc&_nc_ohc=YP9mfUyPzz4Q7kNvwFJaRhK&_nc_oc=AdmPZM4b7EIer-8EhBmUp0FbfaeLyX-cDxosCXPegtCmW-xLZmTfXOCjcBo11_haG6twd5k_hOxRE2E3D63kCMGx&_nc_zt=23&_nc_ht=instagram.fsof9-1.fna&oh=03_Q7cD2QFfX8knSlCvJ30WDNWZ5L24pIwxmmMLZsl8O1LmI2H4Gg&oe=6841C4F0" alt="Logo" width="300"/>
 </div>
 
-## About Our Program 💻
+--About Our Program 💻
 
 **NEXTDRIVE** is a smart car rental platform designed to simplify how people rent vehicles. Whether you're a tourist, a student, or a professional needing a temporary ride, our platform connects you with reliable cars from trusted providers. The system includes real-time car availability, interactive booking forms, user profiles, rental history, and admin controls for vehicle management. It’s built with a user-friendly interface and powerful backend to ensure fast, flexible, and secure rentals.
 
 <hr>
-
-### 🛠 Tech Stack
+-- 🛠 Tech Stack
 
 **Used code editors & collaboration tools:**
 
@@ -23,13 +22,12 @@
   <a href="https://git-scm.com/"><img src="https://img.icons8.com/nolan/48/git.png" alt="Git" width="48px"/></a>
 </p>
 
-### 🎨 Design & Planning Tools
+--🎨 Design & Planning Tools
 
 <p align="left">
   <a href="https://www.canva.com/"><img src="https://img.icons8.com/color/48/canva.png" alt="Canva" width="48px"/></a>
 </p>
-
-### 📚 Documentation, Presentations & Communication
+--📚 Documentation, Presentations & Communication
 
 <p align="left">
   <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/color/48/ms-word.png" alt="Word" width="48px"/></a>
@@ -39,17 +37,17 @@
 
 <hr>
 
-### 📂 Documents
+-- 📂 Documents
 
 - [📊 Presentation]()  
 - [📝 Documentation]()
 
 <hr>
 
-### 👥 Our Team – NEXTDRIVE
+-👩🏽‍💻👩🏽‍💻Our Team👩🏽‍💻🧑🏽‍💻<br>
+- <a href = "KSIvanova24"> Kristiyana Ivanova </a> (HTML DEVELOPER)<br>
+- <a href = "RMKolibarov"> Rafail Kolibarov </a> (CSS DEVELOPER)<br>
+- <a href = "SISavakov24"> Stoyan Savakov</a> (SCRUM TRAINER)<br>
+- <a href = "BBMariyanova24"> Brianna Mariyanova</a> (Designer)<br>
+- <a href = "VMTsenova24"> Vanesa Tsenova</a> (HTML DEVELOPER)<br>
 
-- 👩 Kristiyana Ivanova – *HTML DVEVELOPER*
-- 👨 Rafail Kolibarov – *CSS DEVELOPER*
-- 👩 Brianna Mariyanova – *DESIGNER*
-- 👩 Vanesa Tsenova – *HTML DEVELOPER*
-- 👨 Stoyan Savakov – *SCRUM TRAINER*
