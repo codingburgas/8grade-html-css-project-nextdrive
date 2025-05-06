@@ -1,4 +1,5 @@
 /* Reset margin, padding, and set box-sizing */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,13 @@
 }
  
 /* Smooth scrolling effect */
+
 html {
     scroll-behavior: smooth;
 }
  
 /* Body styling: gradient background with animation */
+
 body {
     font-family: 'Rubik', sans-serif;
     background: linear-gradient(-45deg, #141e30, #243b55, #1e3c72, #2a5298);
@@ -21,6 +24,7 @@ body {
 }
  
 /* Animation for gradient background */
+
 @keyframes gradientBG {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
@@ -28,13 +32,19 @@ body {
 }
  
 /* Container: limits max width and centers content */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+.container h2 {
+    padding-top:  7px;
+}
  
 /* Header: sticky navigation bar */
+
 .header {
     background: rgba(0, 0, 0, 0.7);
     position: sticky;
@@ -75,8 +85,9 @@ body {
 }
  
 /* Hero section: full-screen background */
+
 .hero {
-    height: 80vh;
+    height: 65vh;
     background: url('https://source.unsplash.com/1600x900/?car,road') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -91,6 +102,7 @@ body {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
+
 }
  
 .hero-content {
@@ -135,14 +147,20 @@ body {
 }
  
 /* Section headers */
+
 .section h2 {
     font-size: 2.5rem;
     color: #ffdd00;
     margin-bottom: 2rem;
+    height: 60px;
+    margin-bottom: 10px;
 }
  
 /* Grid layout for cards */
+
 .grid {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -150,26 +168,37 @@ body {
 }
  
 /* Card styles */
+
 .card {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+    border-radius: 10px;
     padding-bottom: 1rem;
     transition: transform 0.3s;
 }
  
 .card:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
  
 .card img {
     width: 100%;
-    height: 180px;
+    height: 270px;
     object-fit: cover;
+    border-radius: 10px;
 }
  
 .card h3 {
-    margin: 1rem 0;
+    margin: 0;
+    padding: 0.75rem;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0 0 6px 6px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
+
+
  
 .btn-sm {
     background: #091983;
@@ -187,6 +216,7 @@ body {
 }
  
 /* Reservation form styles */
+
 .form-reservation {
     display: flex;
     flex-direction: column;
@@ -197,6 +227,7 @@ body {
 }
  
 .form-reservation input,
+
 .form-reservation select {
     width: 100%;
     padding: 0.8rem;
@@ -208,6 +239,7 @@ body {
 }
  
 /* Bar chart styles */
+
 .bar-chart {
     display: flex;
     justify-content: space-between;
@@ -228,7 +260,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    transition: background 0.3s;
+    transition: background 0.5s;
 }
  
 .bar:hover {
@@ -244,14 +276,15 @@ body {
 }
  
 .month {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
+    margin-top: 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 5px;
     text-transform: capitalize;
-    color: #f1c40f;
+    color: #000000;
 }
  
 /* Carousel with reviews */
+
 .carousel {
     display: flex;
     flex-direction: column;
@@ -270,21 +303,33 @@ body {
 }
  
 /* Animation for fading reviews */
+
 @keyframes fadeReview {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.5; }
 }
  
 /* Light background style */
+
 .bg-light {
     background: rgba(255, 255, 255, 0.05);
 }
  
 /* Footer styles */
+
 .footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 2rem 0;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 0.85rem;
+    display: flex;
 }
  
 .footer a {
@@ -297,18 +342,80 @@ body {
     text-decoration: underline;
 }
  
+/* Payment method styles */
+
+.payment-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem 0;
+}
+ 
+.payment-method {
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.payment-method img {
+    width: 80px;
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.2s ease;
+}
+ 
+.payment-method img:hover {
+    transform: scale(1.1);
+}
+ 
 /* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
+
     .hero h1 {
         font-size: 2.2rem;
     }
+
     .hero p {
         font-size: 1rem;
     }
+
     .grid {
         grid-template-columns: 1fr;
     }
+
     .nav-list {
         flex-direction: column;
     }
+
+}
+
+#categories {
+    margin-top: 10px;
+}
+
+#button {
+    margin-bottom:  15px;
+}
+
+#grid2 {
+    padding-bottom:20px;
+}
+
+#container3 {
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+#btmfooter {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding-bottom: 10px;
 }
