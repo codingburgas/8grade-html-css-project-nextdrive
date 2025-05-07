@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #001f54;
+}
+ 
+/* Горното меню и логото */
+header {
+    background: linear-gradient(to right, #06183c, #021026);
+    padding: 15px 30px;
+    color: rgb(178, 165, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #00aced;
+    display: flex;
+    align-items: center;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+ 
+nav a:hover {
+    text-decoration: underline;
+}
+ 
+ 
+.car-card {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(177, 176, 197, 0.733);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+ 
+.car-left {
+    flex: 1;
+    text-align: center;
+}
+ 
+.car-image {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+ 
+.car-title {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+ 
+.car-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+.subtitle {
+    font-weight: bold;
+    color: #444;
+}
+ 
+.details li {
+    list-style: none;
+    margin: 0;
+}
+ 
+.price {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+ 
+.period {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+ 
+.period input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+ 
+.reserve-btn {
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+ 
