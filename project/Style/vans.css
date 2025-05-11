@@ -1,0 +1,246 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body & Layout */
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #071d3c;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #000c1f;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00e6ff;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-list a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section */
+  .section {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+  }
+  
+  /* Grid & Cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+  }
+  .card {
+    background-color: #0a1f44;
+    width: 100%;
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .card h3 {
+    margin: 0.5rem 0 1rem;
+    color: #ffd700;
+    font-size: 1.3rem;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #000c1f;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  .btn:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section {
+    flex: 1 1 180px;
+    min-width: 180px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 0.5rem;
+    color: #ffdd00;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .footer-section a {
+    color: #ffdd00;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer a {
+    color: #ffdd00;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Payment method styles */
+  .payment-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem 0;
+  }
+  
+  .payment-method {
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .payment-method img {
+    width: 80px;
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.2s ease;
+  }
+  
+  .payment-method img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  /* Misc elements */
+  #categories {
+    margin-top: 10px;
+  }
+  
+  #button {
+    margin-bottom: 15px;
+  }
+  
+  #grid2 {
+    padding-bottom: 20px;
+  }
+  
+  #container3 {
+    margin-bottom: 20px;
+  }
+  

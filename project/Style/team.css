@@ -1,112 +1,131 @@
-/* Reset default spacing and box sizing */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body styles: font, background gradient, full height layout */
+  /* Body style */
   body {
     font-family: 'Rubik', sans-serif;
     background: linear-gradient(-45deg, #141e30, #243b55, #1e3c72, #2a5298);
-    animation: gradientMove 15s ease infinite;
+    animation: bgMove 15s ease infinite;
     color: white;
-    line-height: 1.6;
-    text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
   
-  /* Background gradient animation */
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  /* Background animation */
+  @keyframes bgMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
-  /* Content wrapper */
+  /* Container for content */
   .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
     padding: 1rem;
   }
   
-  /* Header bar styles */
+  /* Header and navigation */
   .header {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.8);
     position: sticky;
     top: 0;
-    z-index: 999;
     padding: 1rem 0;
+    z-index: 1000;
   }
   
-  /* Logo style */
   .logo {
     font-size: 2rem;
     color: #00ffff;
     font-weight: bold;
+    text-align: center;
   }
   
-  /* Navigation list */
   .nav-list {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
     margin-top: 0.5rem;
   }
   
-  /* Navigation links */
   .nav-list a {
     color: #f4d03f;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     transition: 0.3s;
   }
   
   .nav-list a:hover {
-    color: #ffffff;
+    color: white;
   }
   
-  /* Main content section */
+  /* Team section */
   .section {
     flex: 1;
     padding: 4rem 1rem;
+    text-align: center;
   }
   
-  /* Section heading */
   .section h2 {
-    font-size: 2.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     color: #ffd700;
   }
   
-  /* Paragraph styling */
-  .section p {
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
-  }
-  
-  /* Button style */
-  .btn {
-    background: #ffd700;
-    color: black;
-    padding: 0.7rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+  /* Team cards grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-top: 2rem;
+  }
+  
+  .team-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
+    text-align: center;
   }
   
-  .btn:hover {
-    background: #ffc300;
-    transform: scale(1.05);
+  .team-card:hover {
+    transform: translateY(-5px);
   }
   
-  /* Footer style */
+  .team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .team-card h3 {
+    color: #00ffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .team-card p {
+    color: #ddd;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
   .footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 2rem 0;

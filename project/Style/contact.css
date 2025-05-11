@@ -1,112 +1,128 @@
-/* Reset default spacing and box sizing */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body styles: font, background gradient, full height layout */
+  /* Base styling */
   body {
-    font-family: 'Rubik', sans-serif;
-    background: linear-gradient(-45deg, #141e30, #243b55, #1e3c72, #2a5298);
-    animation: gradientMove 15s ease infinite;
-    color: white;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #071d3c;
+    color: #ffffff;
     line-height: 1.6;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
   }
   
-  /* Background gradient animation */
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  /* Content wrapper */
+  /* Container */
   .container {
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 1rem;
   }
   
-  /* Header bar styles */
+  /* Header */
   .header {
-    background: rgba(0, 0, 0, 0.75);
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    background-color: #000c1f;
     padding: 1rem 0;
   }
   
-  /* Logo style */
   .logo {
-    font-size: 2rem;
-    color: #00ffff;
+    font-size: 1.6rem;
     font-weight: bold;
+    color: #00e6ff;
   }
   
-  /* Navigation list */
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+  nav {
     margin-top: 0.5rem;
   }
   
-  /* Navigation links */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
   .nav-list a {
-    color: #f4d03f;
+    color: #ffd700;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+    font-weight: bold;
   }
   
   .nav-list a:hover {
-    color: #ffffff;
+    text-decoration: underline;
   }
   
-  /* Main content section */
+  /* Section styling */
   .section {
-    flex: 1;
-    padding: 4rem 1rem;
+    padding: 3rem 0;
+    text-align: center;
   }
   
-  /* Section heading */
   .section h2 {
-    font-size: 2.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
     color: #ffd700;
   }
   
-  /* Paragraph styling */
-  .section p {
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
+  /* Contact form */
+  .form-reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #0a1f44;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    margin: 0 auto;
   }
   
-  /* Button style */
+  .form-reservation input,
+  .form-reservation textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .form-reservation input::placeholder,
+  .form-reservation textarea::placeholder {
+    color: #999;
+  }
+  
+  .form-reservation textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Submit button */
   .btn {
-    background: #ffd700;
-    color: black;
-    padding: 0.7rem 2rem;
-    border-radius: 30px;
+    background-color: #ffd700;
+    color: #000c1f;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    margin-top: 2rem;
-    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
   }
   
   .btn:hover {
-    background: #ffc300;
+    background-color: #ffcc00;
     transform: scale(1.05);
   }
   
-  /* Footer style */
+  /* Map */
+  .map {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+  }
+  
+  /* Footer */
   .footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 2rem 0;

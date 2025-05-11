@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextDrive – Rent Your Dream Car</title>
+<link rel="stylesheet" href="../Style/index.css">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="container">
+      <div class="logo">NextDrive</div>
+      <nav>
+        <ul class="nav-list">
+         <li><a href="../Pages/index.html#home">Home</a></li>
+                <li><a href="../Pages/index.html#reserve">Reserve</a></li>
+                <li><a href="../Pages/index.html#categories">Categories</a></li>
+                <li><a href="../Pages/index.html#offers">Offers</a></li>
+                <li><a href="../Pages/index.html#reviews">Reviews</a></li>
+                <li><a href="../Pages/team.html">Our Team</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+                <li><a href="../Pages/login.html">Login</a></li>
+                <li><a href="../Pages/register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Drive with Passion</h1>
+      <div class="rating">★★★★★ <span>4.9/5</span></div>
+      <p>Choose your perfect car with NextDrive today!</p>
+      <a href="#reservation" class="btn">Book Now</a>
+    </div>
+  </section>
+ 
+  <section id="reservation" class="section bg-light">
+    <div class="container">
+      <h2>Reserve Your Car</h2>
+      <form class="form-reservation">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="date" required />
+        <input type="date" required />
+        <select required>
+          <option value="">Select Category</option>
+          <option>Luxury</option>
+          <option>Sport</option>
+          <option>Electric</option>
+          <option>Family</option>
+          <option>Offroad</option>
+          <option>Vans</option>
+        </select>
+        <button id="button" type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+  </section>
+ 
+  <section id="categories" class="section">
+    <div class="container">
+      <h2>Categories</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="../Images/family.webp" alt="Family">
+          <h3>Family Cars</h3>
+          <a href="../Pages/family.html" class="btn-sm">See More</a>
+        </div>
+        <div class="card">
+          <img src="../Images/sports.jpg" alt="Sport">
+          <h3>Sport Cars</h3>
+          <a href="../Pages/sports.html" class="btn-sm">See More</a>
+        </div>
+        <div class="card">
+          <img src="../Images/electric.jpg" alt="Electric">
+          <h3>Electric Cars</h3>
+          <a href="../Pages/electric.html" class="btn-sm">See More</a>
+        </div>
+        <div class="card">
+          <img src="../Images/vans.avif" alt="Family">
+          <h3>Vans</h3>
+          <a href="../Pages/vans.html" class="btn-sm">See More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="sales" class="section bg-light">
+    <div class="container">
+      <h2>Rental cars</h2>
+      <div class="bar-chart" style="font-weight: 600; font-size: 10px;">
+        <div class="bar" style="height: 80%; ">
+          <span>80</span>
+          <div class="month">January</div>
+        </div>
+        <div class="bar" style="height: 60%;">
+          <span>60</span>
+          <div class="month">February</div>
+        </div>
+        <div class="bar" style="height: 90%;">
+          <span>90</span>
+          <div class="month">March</div>
+        </div>
+        <div class="bar" style="height: 70%;">
+          <span>70</span>
+          <div class="month">April</div>
+        </div>
+        <div class="bar" style="height: 50%;">
+          <span>50</span>
+          <div class="month">May</div>
+        </div>
+        <div class="bar" style="height: 40%;">
+          <span>40</span>
+          <div class="month">June</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="offers" class="section bg-light">
+    <div class="container">
+      <h2>Special Offers</h2>
+      <div id="grid2" class="grid">
+        <div class="card">
+          <img src="../Images/ferarri f8.webp" alt="Ferrari F8">
+          <h3>Ferrari F8 – 20% OFF</h3> 
+           <a href="../Pages/FerrariF8.html" class="btn-sm">See More</a>
+        </div>
+        <div class="card">
+          <img src="../Images/tesla3.webp" alt="Tesla Model 3">
+          <h3>Tesla Model 3 – 15% OFF</h3>
+           <a href="../Pages/Teslamodel3.html" class="btn-sm">See More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="reviews" class="section">
+    <div id="container3" class="container">
+      <h2>Customer Reviews</h2>
+      <div class="carousel">
+        <div class="review">"Fantastic cars and service!"<br><strong>– Maria D.</strong></div>
+        <div class="review">"Loved my Tesla experience!"<br><strong>– George I.</strong></div>
+        <div class="review">"Perfect family trip!"<br><strong>– Elena P.</strong></div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="payment" class="section bg-light">
+    <div class="container">
+      <h2>Payment Methods</h2>
+      <div class="payment-grid">
+        <div class="payment-method"><img src="../Images/Visa.png" alt="Visa">
+        <div class="payment-method"><img src="../Images/mastercard.png" alt="Mastercard">
+        <div class="payment-method"><img src="../Images/americanexpress.webp" alt="American Express">
+        <div class="payment-method"><img src="../Images/paypal.jpg" alt="PayPal"> 
+        <div class="payment-method"><img src="../Images/Apple-Pay-logo.png" alt="Apple Pay">
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@nextdrive.com">contact@nextdrive.com</a></p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+    </section><div class="container">
+
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="../Pages/contact.html">Contact</a></li>
+            <li><a href="../Pages/faq.html">FAQ</a></li>
+            <li><a href="">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="../Pages/terms.html">Terms of Service</a></li>
+            <li><a href="../Pages/privacy.html">Privacy Policy</a></li>
+            <li><a href="">Cookie Policy</a></li>
+          </ul>
+    </div>
+  </footer>
+  <div id="btmfooter" class="footer-bottom">
+    <p>© <span id="date"></span> NextDrive. All rights reserved.</p>
+  </div>
+</div>
+</body>
+<script>
+  const el = document.getElementById("date");
+  const year = new Date().getFullYear();
+  el.innerHTML = year;
+</script>
+</html>
