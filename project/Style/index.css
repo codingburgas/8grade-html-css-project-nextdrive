@@ -1,18 +1,12 @@
-/* Reset margin, padding, and set box-sizing */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
-/* Smooth scrolling effect */
 
 html {
     scroll-behavior: smooth;
 }
- 
-/* Body styling: gradient background with animation */
 
 body {
     font-family: 'Rubik', sans-serif;
@@ -22,16 +16,12 @@ body {
     text-align: center;
     line-height: 1.6;
 }
- 
-/* Animation for gradient background */
 
 @keyframes gradientBG {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
- 
-/* Container: limits max width and centers content */
 
 .container {
     max-width: 1200px;
@@ -40,10 +30,8 @@ body {
 }
 
 .container h2 {
-    padding-top:  7px;
+    padding-top: 7px;
 }
- 
-/* Header: sticky navigation bar */
 
 .header {
     background: rgba(0, 0, 0, 0.7);
@@ -51,40 +39,60 @@ body {
     top: 0;
     z-index: 1000;
 }
- 
+
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
 }
- 
+
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #0ff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    padding: 6px 12px;
+    border: 2px solid #0ff;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px #0ff;
 }
- 
+
+.logo img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(0 0 5px #0ff);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
- 
+
 .nav-list a {
     color: #dcd925;
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
 }
- 
+
 .nav-list a:hover {
     color: #ffdd00;
     transform: translateY(-3px);
 }
- 
-/* Hero section: full-screen background */
+
 
 .hero {
     height: 65vh;
@@ -96,41 +104,40 @@ body {
     position: relative;
     padding: 0 1rem;
 }
- 
+
 .hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
-
 }
- 
+
 .hero-content {
     position: relative;
     z-index: 1;
 }
- 
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
- 
+
 .rating {
     color: #ffdd00;
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
- 
+
 .rating span {
     color: white;
     margin-left: 0.5rem;
 }
- 
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
- 
+
 .btn {
     background: #ffdd00;
     color: black;
@@ -140,13 +147,11 @@ body {
     text-decoration: none;
     transition: 0.3s;
 }
- 
+
 .btn:hover {
     background: #ffc300;
     transform: scale(1.05);
 }
- 
-/* Section headers */
 
 .section h2 {
     font-size: 2.5rem;
@@ -155,8 +160,6 @@ body {
     height: 60px;
     margin-bottom: 10px;
 }
- 
-/* Grid layout for cards */
 
 .grid {
     margin-top: 20px;
@@ -166,8 +169,6 @@ body {
     gap: 2rem;
     padding: 0 1rem;
 }
- 
-/* Card styles */
 
 .card {
     background: rgba(255, 255, 255, 0.1);
@@ -175,19 +176,19 @@ body {
     padding-bottom: 1rem;
     transition: transform 0.3s;
 }
- 
+
 .card:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
- 
+
 .card img {
     width: 100%;
     height: 270px;
     object-fit: cover;
     border-radius: 10px;
 }
- 
+
 .card h3 {
     margin: 0;
     padding: 0.75rem;
@@ -198,8 +199,6 @@ body {
     text-transform: uppercase;
 }
 
-
- 
 .btn-sm {
     background: #091983;
     color: black;
@@ -209,13 +208,11 @@ body {
     text-decoration: none;
     transition: 0.3s;
 }
- 
+
 .btn-sm:hover {
     background: #00c3ff;
     transform: translateY(-3px);
 }
- 
-/* Reservation form styles */
 
 .form-reservation {
     display: flex;
@@ -225,9 +222,8 @@ body {
     max-width: 400px;
     margin: 0 auto;
 }
- 
-.form-reservation input,
 
+.form-reservation input,
 .form-reservation select {
     width: 100%;
     padding: 0.8rem;
@@ -237,8 +233,6 @@ body {
     color: #fff;
     font-size: 1rem;
 }
- 
-/* Bar chart styles */
 
 .bar-chart {
     display: flex;
@@ -251,7 +245,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
- 
+
 .bar {
     width: 50px;
     background: #ffdd00;
@@ -262,11 +256,11 @@ body {
     align-items: center;
     transition: background 0.5s;
 }
- 
+
 .bar:hover {
     background: #ffc300;
 }
- 
+
 .bar span {
     position: absolute;
     top: -1.5rem;
@@ -274,7 +268,7 @@ body {
     font-weight: 500;
     color: white;
 }
- 
+
 .month {
     margin-top: 0.7rem;
     font-size: 0.7rem;
@@ -282,8 +276,6 @@ body {
     text-transform: capitalize;
     color: #000000;
 }
- 
-/* Carousel with reviews */
 
 .carousel {
     display: flex;
@@ -293,7 +285,7 @@ body {
     margin: 0 auto;
     animation: fadeReview 12s infinite;
 }
- 
+
 .review {
     background: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
@@ -301,21 +293,15 @@ body {
     font-size: 1.1rem;
     font-style: italic;
 }
- 
-/* Animation for fading reviews */
 
 @keyframes fadeReview {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.5; }
 }
- 
-/* Light background style */
 
 .bg-light {
     background: rgba(255, 255, 255, 0.05);
 }
- 
-/* Footer styles */
 
 .footer {
     background: rgba(0, 0, 0, 0.8);
@@ -331,18 +317,16 @@ body {
     gap: 0.85rem;
     display: flex;
 }
- 
+
 .footer a {
     color: #ffdd00;
     text-decoration: none;
     margin: 0 0.5rem;
 }
- 
+
 .footer a:hover {
     text-decoration: underline;
 }
- 
-/* Payment method styles */
 
 .payment-grid {
     display: flex;
@@ -352,7 +336,7 @@ body {
     gap: 20px;
     padding: 1rem 0;
 }
- 
+
 .payment-method {
     border-radius: 8px;
     padding: 10px;
@@ -360,22 +344,19 @@ body {
     justify-content: center;
     align-items: center;
 }
- 
+
 .payment-method img {
     width: 80px;
     height: auto;
     opacity: 0.9;
     transition: transform 0.2s ease;
 }
- 
+
 .payment-method img:hover {
     transform: scale(1.1);
 }
- 
-/* Responsive styles for smaller screens */
 
 @media (max-width: 768px) {
-
     .hero h1 {
         font-size: 2.2rem;
     }
@@ -391,7 +372,6 @@ body {
     .nav-list {
         flex-direction: column;
     }
-
 }
 
 #categories {
