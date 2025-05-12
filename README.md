@@ -39,8 +39,8 @@
 
 -- 📂 Documents
 
-- [📊 Presentation]()  
-- [📝 Documentation]()
+- [📊 Presentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/sisavakov24_codingburgas_bg/EVyMjqlgTOlFnVOJXLQFP50BPrDUszmvSoljcRVkuVVVZg?rtime=qktmH12R3Ug)  
+- [📝 Documentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/sisavakov24_codingburgas_bg/EfQMe5LcgyBBtz_xUViA44oBPQe7KFVPdBHwMxxhqgrKEg?wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1747058363607&web=1)
 
 <hr>
 
